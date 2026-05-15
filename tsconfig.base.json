@@ -44,7 +44,8 @@
 
       // packages
       "@sweetroll/fomod": ["./packages/fomod/src/index.ts"],
-      "@sweetroll/fomod-ui": ["./packages/fomod-ui/src/index.ts"]
+      "@sweetroll/fomod-ui": ["./packages/fomod-ui/src/index.ts"],
+      "@sweetroll/vfs": ["./packages/vfs/src/index.ts"]
     },
     "resolveJsonModule": true,
     "rootDir": "./",
