@@ -1,8 +1,8 @@
-import {parseModuleConfig} from '@sweetroll/fomod';
 import type {Meta, StoryObj} from '@storybook/react';
+import {parseModuleConfig} from '@sweetroll/fomod';
 import {FomodInstaller} from '../src/components/FomodInstaller';
 // @ts-expect-error -- raw import
-import moduleConfigXml from './__fixtures__/Enhanced Blood Textures-2357-4-0-1639547261/fomod/ModuleConfig.xml?raw';
+import moduleConfigXml from './__fixtures__/Enhanced Blood Textures/fomod/ModuleConfig.xml?raw';
 
 // eslint-disable-next-line @typescript-eslint/no-unsafe-type-assertion
 const config = parseModuleConfig(moduleConfigXml as string);
