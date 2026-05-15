@@ -1,15 +1,15 @@
-import type {FileSystemItem} from '@sweetroll/fomod';
 import type {Meta, StoryObj} from '@storybook/react';
+import type {FileSystemItem} from '@sweetroll/fomod';
 import {InstallSummary} from '../src/components/InstallSummary';
 
-const file = (source: string, destination?: string, overrides?: Partial<FileSystemItem>): FileSystemItem => ({
-  source,
-  destination,
+const file = ((source: string, destination?: string, overrides?: Partial<FileSystemItem>): FileSystemItem => ({
+  source: source,
+  destination: destination,
   alwaysInstall: false,
   installIfUsable: false,
   priority: 0,
   ...overrides
-});
+}));
 
 const meta = ({
   title: 'Components/InstallSummary',

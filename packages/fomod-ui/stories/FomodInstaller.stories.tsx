@@ -1,16 +1,16 @@
 /* eslint-disable max-lines */
-import type {FileSystemItem, ModuleConfiguration} from '@sweetroll/fomod';
 import type {Meta, StoryObj} from '@storybook/react';
+import type {FileSystemItem, ModuleConfiguration} from '@sweetroll/fomod';
 
 import {FomodInstaller} from '../src/components/FomodInstaller';
 
-const file = (source: string, destination?: string): FileSystemItem => ({
-  source,
-  destination,
+const file = ((source: string, destination?: string): FileSystemItem => ({
+  source: source,
+  destination: destination,
   alwaysInstall: false,
   installIfUsable: false,
   priority: 0
-});
+}));
 
 const simpleConfig: ModuleConfiguration = {
   moduleName: {
